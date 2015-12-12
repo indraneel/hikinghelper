@@ -1,0 +1,135 @@
+@font-face {
+	font-family:"leagueSpartan";
+	src:url("LeagueSpartan-Bold.otf");
+}
+
+.league-spartan {
+	font-family: "leagueSpartan", sans-serif;
+}
+
+.hh-light-green {
+	color: #4AB648;
+}
+
+.hh-green {
+	color: #357F3D;
+}
+
+
+.nav {
+	font-family: "leagueSpartan", sans-serif;
+	font-size: 24px;
+	left: 0;
+	padding: 20px;
+	top: 0;
+}
+
+.nav-button a {
+	text-decoration: none;
+}
+.nav-button a:hover {
+	color: #4AB648;
+}
+
+.hero {
+	min-height: 100px;
+	text-align: center;
+	font-family: Baskerville, serif;
+	font-size: 48px;
+	padding: 10px;
+}
+
+.call-to-action {
+	text-align: center;
+	font-size: 24px;
+}
+
+.call-to-action hr {
+	margin: 10px;
+}
+
+
+.signup {
+	min-height: 600px;
+	padding: 50px;
+}
+
+.signup-form {
+	margin: 0 auto;
+	max-width: 640px;
+	padding: 15px;
+	border-radius: 5px;
+	-webkit-box-shadow:0px 2px 2px #ABADAF;
+	-moz-box-shadow:0px 2px 2px #ABADAF;
+	box-shadow:0px 2px 2px #ABADAF;
+}
+
+.submit {
+	text-align: center;
+}
+
+.submit > button {
+	font-family: "leagueSpartan", serif;
+	font-size: 18px;
+	margin: 0 auto;
+	background-color: rgba(253, 210, 169, 0.5);
+	/*background-color: rgba(255, 245, 115, .5);*/
+}
+
+.submit > button:active {
+	margin: 0 auto;
+	background-color: rgba(253, 210, 169, 1);
+	/*background-color: rgba(255, 245, 115, .5);*/
+}
+
+.about {
+	background-color: #FDD2A9;
+	min-height: 500px;
+}
+
+.blurb {
+	max-width: 640px;
+	margin: 0 auto;
+	padding-top: 50px;
+	font-family: Baskerville, serif;
+	font-size: 24px;
+}
+
+.footer {
+	background-color: #FFF573;
+	min-height: 100px;
+}
+
+.links {
+	padding: 50px;
+	margin: 0 auto;
+}
+
+@media screen(min-width: 500px) {
+	.question {
+		text-align: right;
+	}
+
+}
+
+@media screen(min-width: 400px) {
+	.nav-button {
+		display: none;
+	}
+	.hero {
+		min-height: 100px;
+		text-align: center;
+		font-family: Baskerville, serif;
+		font-size: 28px;
+		padding: 10px;
+	}
+	.signup-form {
+		width: 100%;
+	}
+	.question {
+		text-align: center;
+	}
+	.field {
+		text-align: center;
+	}
+}

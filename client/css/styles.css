@@ -1,0 +1,161 @@
+body {
+	font-family: helvetica;
+	margin: 0;
+	background-size: cover;
+}
+
+.screen {
+	top: 0;
+}
+
+.nav {
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0;
+	position: static;
+	background-color: rgba(214, 214, 214, 1)
+}
+
+.nav-left {
+margin: 0;
+padding-left: 20px;
+}
+
+.nav-right {
+float: right;
+}
+
+.row {
+	width:80%;
+	padding: 10px, 20px;
+	height: auto;
+	margin: 0 auto;
+	}
+
+.questions {
+	padding-top: 4%;
+	padding-bottom: 1%;
+	margin: 8%;
+	background-color: rgba(214, 214, 214, .7);
+}
+
+.col {
+	padding-left: 10%;
+	width:40%;
+	position:relative;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: right;
+	vertical-align: middle;
+	}
+
+.rcol {
+	padding-left: 5%;
+	width:40%;
+	position:relative;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+	vertical-align: middle;
+	}
+
+	.form-inputs{
+		width: 70%;
+	}
+
+.tagline {
+	margin: 0 auto;
+	padding: 10%;
+	color: white;
+	font-size: 200%;
+	text-align: center;
+	}
+
+.splash {
+	background-size: cover;
+	top: 0px;
+}
+
+.info {
+	padding: 3%;
+	margin: 8%;
+	background-color: rgba(214, 214, 214, .7);
+	text-align: center;
+}
+
+.submit{
+		text-align: center;
+}
+
+button {
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 5px;
+	margin: 5px auto;
+	color: #ccc;
+	background-color: #555;
+	border: 0 none;
+	border-radius: 3px;
+}
+
+button:hover, button:focus
+{
+	background-color: #4F7942;
+}
+
+header {
+font-weight: bold;
+font-size: 130%;
+text-align: center;
+}
+
+
+h3 {
+	bottom: 0px;
+	color: white;
+}
+
+i {
+	font-size: 70%;
+}
+
+@media (max-width:500px) {
+			body{
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-image: none;
+			}
+
+			h2 {
+				font-size:70%
+			}
+
+			.splash{
+				padding: 2%;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			.col {
+				display: block;
+				text-align: center;
+				width:80%;
+				padding-left: 0%;
+
+			}
+			.rcol {
+				display: block;
+				text-align: left;
+				width:80%;
+				text-align: center;
+				padding-left: 0%;
+			}
+
+			.form-inputs{
+				width: 100%;
+			}
+
+		}
