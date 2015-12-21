@@ -1,161 +1,237 @@
-body {
-	font-family: helvetica;
-	margin: 0;
+/* mobile first */
+
+html, body {
+	height: 100%;
+}
+
+@font-face {
+	font-family:"leagueSpartan";
+	src:url("LeagueSpartan-Bold.otf");
+}
+
+.league-spartan {
+	font-family: "leagueSpartan", sans-serif;
+}
+
+.hh-light-green {
+	color: #4AB648;
+}
+
+.hh-green {
+	color: #357F3D;
+}
+
+.highlight {
+	/*background-color: rgba(253, 210, 169, .7);*/
+}
+
+section {
+	padding: 25px;
+}
+
+
+.hero {
+	min-height: 100%;
+	text-align: center;
+	background-image: url('../img/hiker-background-3.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: -550px;
+	color: white;
 }
-
-.screen {
-	top: 0;
-}
-
 .nav {
-	top: 0;
-	right: 0;
-	left: 0;
-	margin: 0;
-	position: static;
-	background-color: rgba(214, 214, 214, 1)
-}
-
-.nav-left {
-margin: 0;
-padding-left: 20px;
-}
-
-.nav-right {
-float: right;
-}
-
-.row {
-	width:80%;
-	padding: 10px, 20px;
-	height: auto;
-	margin: 0 auto;
-	}
-
-.questions {
-	padding-top: 4%;
-	padding-bottom: 1%;
-	margin: 8%;
-	background-color: rgba(214, 214, 214, .7);
-}
-
-.col {
-	padding-left: 10%;
-	width:40%;
-	position:relative;
-	display: inline-block;
-	margin: 0 auto;
-	text-align: right;
-	vertical-align: middle;
-	}
-
-.rcol {
-	padding-left: 5%;
-	width:40%;
-	position:relative;
-	display: inline-block;
-	margin: 0 auto;
-	text-align: left;
-	vertical-align: middle;
-	}
-
-	.form-inputs{
-		width: 70%;
-	}
-
-.tagline {
-	margin: 0 auto;
-	padding: 10%;
-	color: white;
-	font-size: 200%;
-	text-align: center;
-	}
-
-.splash {
-	background-size: cover;
-	top: 0px;
-}
-
-.info {
-	padding: 3%;
-	margin: 8%;
-	background-color: rgba(214, 214, 214, .7);
+	font-family: "leagueSpartan", sans-serif;
+	font-size: 40px;
 	text-align: center;
 }
 
-.submit{
-		text-align: center;
+
+.nav-button a {
+	text-decoration: none;
 }
 
-button {
-	display: block;
-	font-size: 1.1em;
+.hero .mission {
+	font-size: 40px;
+	padding-top: 0px;
 	font-weight: bold;
-	text-transform: uppercase;
-	padding: 5px 5px;
-	margin: 5px auto;
-	color: #ccc;
-	background-color: #555;
-	border: 0 none;
-	border-radius: 3px;
 }
 
-button:hover, button:focus
-{
-	background-color: #4F7942;
+.hero .tagline {
+
+	font-size: 24px;
 }
 
-header {
-font-weight: bold;
-font-size: 130%;
-text-align: center;
+.hero .instructions {
+	margin-top: 20px;
+	font-size: 20px;
 }
 
-
-h3 {
-	bottom: 0px;
-	color: white;
+.call-to-action {
+	text-align: center;
+	font-size: 18px;
 }
 
-i {
-	font-size: 70%;
+.call-to-action hr {
+	margin: 10px;
 }
 
-@media (max-width:500px) {
-			body{
-				background-size: contain;
-				background-repeat: no-repeat;
-				background-image: none;
-			}
+.signup-form {
+	background-color: rgba(0,0,0,.7);
+	max-width: 640px;
+	/*width: 100%;*/
+	margin: 40px auto;
+	padding: 15px;
+	border-radius: 5px;
+}
 
-			h2 {
-				font-size:70%
-			}
+.submit {
+	text-align: center;
+}
 
-			.splash{
-				padding: 2%;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
+.submit > button {
+	font-family: "leagueSpartan", serif;
+	font-size: 14px;
+	margin: 0 auto;
+	background-color: rgba(253, 210, 169, 1);
+}
 
-			.col {
-				display: block;
-				text-align: center;
-				width:80%;
-				padding-left: 0%;
+.submit > button:active {
+	margin: 0 auto;
+	background-color: rgba(253, 210, 169, 1);
+}
+.question {
+	font-weight: bold;
+	text-align: center;
+}
+.field {
+	text-align: center;
+	color: #000000;
+}
 
-			}
-			.rcol {
-				display: block;
-				text-align: left;
-				width:80%;
-				text-align: center;
-				padding-left: 0%;
-			}
+.how {
+	min-height: 250px;
+	background-color: #FDD2A9;
+	text-align: center;
+}
 
-			.form-inputs{
-				width: 100%;
-			}
+.how .title {
+	font-weight: bold;
+	font-size: 28px;
+	/*font-weight: bold;*/
+}
 
-		}
+.how .number {
+	margin: 40px auto 0px auto;
+	display: block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	-moz-border-radius: 50%; /* or 50% */
+	border-radius: 50%; /* or 50% */
+	border: 2px solid black;
+	font-size: 25px;
+}
+
+.how .header {
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.about {
+	min-height: 250px;
+}
+
+.blurb {
+	margin: 0 auto;
+	/*font-family: Montserrat, serif;*/
+	font-size: 20px;
+	text-align: justify;
+}
+
+.footer {
+	background-color: #ABADAF;
+	min-height: 100px;
+	text-align: center;
+}
+
+.links {
+	padding: 15px;
+	margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+
+	.hero {
+		background-position-x: 0px;
+	}
+
+}
+
+@media (min-width: 750px) {
+	.hero {
+		background-position-x: 0px;
+	}
+
+	.nav {
+		font-size: 48px;
+	}
+	.nav-button a:hover {
+		color: #4AB648;
+	}
+
+	.hero .mission{
+		font-size: 84px;
+	}
+
+	.hero .tagline {
+		font-size: 36px;
+	}
+
+	.hero .instructions {
+		font-size: 24px;
+		margin-top: 100px;
+	}
+
+	.call-to-action {
+		text-align: center;
+		font-size: 24px;
+	}
+
+	.call-to-action hr {
+		margin: 10px;
+	}
+
+	.signup {
+		/*min-height: 600px;*/
+	}
+
+	.question {
+		text-align: right;
+	}
+	.field {
+		text-align: left;
+	}
+
+	.about {
+		min-height: 500px;
+	}
+
+	.blurb {
+		max-width: 640px;
+		margin: 0 auto;
+		padding-top: 55px;
+		/*font-family: Montserrat, serif;*/
+		font-size: 24px;
+	}
+
+	.footer {
+		background-color: #ABADAF;
+		min-height: 100px;
+	}
+
+	.links {
+		padding: 50px;
+		margin: 0 auto;
+	}
+}
+
