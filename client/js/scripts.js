@@ -41,6 +41,7 @@ $(document).ready(function() {
 			return;
 		} else {
 			$('#email-input').css({ "border": 'none'});
+			$('button').text('Sending...');
 			$.ajax({
 				type: 'POST',
 				url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -84,6 +85,15 @@ $(document).ready(function() {
 					}
 				}
 			});
+
+			setTimeout( function() {
+				$('#signup-form > *').slideUp(800);
+			}, 1000);
+			setTimeout( function() {
+				// $('#signup-form > *').slideUp(800);
+				$('#signup-form').append('Welcome to Hiking Helper! You will receive an email from your helper shortly.')
+			}, 2000);
+	
 		}
 	});
 
