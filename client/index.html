@@ -35,14 +35,22 @@
 				</div>
 			</div>
 			<div class="signup">
+			
 				<form id="signup-form" class="signup-form" method="post">
 					<div class="row">
 						<div class="twelve columns call-to-action">
-							Join our waiting list!
+							Start planning your hike!
 							<hr />
 						</div>
 					</div>
-
+					<div class="row">
+						<div class="six columns question">
+							<p>What's your name?*</p>
+						</div>
+						<div class="six columns field">
+							<input id="name-input" class="form-inputs" type="text" name="Name" placeholder="Name" required>
+						</div>
+					</div>
 					<div class="row">
 						<div class="six columns question">
 							<p>What's your email address?*</p>
@@ -60,13 +68,64 @@
 							<input id="location-input" class="form-inputs"  type="text" min="0" max="24" name="location" placeholder="Location" required>
 						</div>
 					</div>
-
+					<div class="row">
+						<div class="six columns question">
+							<p>How many hours are you willing to drive?</p>
+						</div>
+						<div class="six columns field">
+							<input id="distance-input" type="number" class="form-inputs" name="Travel Length" placeholder="Hours">
+						</div>
+					</div>
+					<div class="row">
+						<div class="six columns question">
+							<p>How much time do you have to spend?</p>
+						</div>
+						<div class="six columns field">
+							<select id="time-input" class="form-inputs hikeDuration" name="Hike Length">
+								<option value="half-day">half a day</option>
+								<option value="whole-day" selected>a whole day</option>
+								<option value="weekend">weekend</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="six columns question">
+							<p>How intense of a hike are you looking for?</p>
+						</div>
+						<div class="six columns field">
+							<select id="length-input" class="form-inputs intensity" name="Hike Intensity">
+								<option value="easy">easy</option>
+								<option value="moderate">moderate</option>
+								<option value="hard">hard</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="six columns question">
+							<p>What are you hiking for?</p>
+						</div>
+						<div class="six columns field" style="color: white;">
+							<input type="checkbox" name="purpose1" value="photos"> I'm going for the views or to take photos</input>
+							<br />
+							<input type="checkbox" name="purpose2" value="workout"> I'm trying to get a workout</input>
+							<br />
+							<input type="checkbox" name="purpose3" value="nature"> I'm exploring nature</input>
+							<br />
+							<input type="checkbox" name="purpose4" value="family-friends"> I'm spending time with family / friends</input>
+							<br />
+							<input type="checkbox" name="purpose5" value="date"> I'm planning a date</input>
+							<br />
+							<input type="checkbox" name="purpose5" value="pet"> I'm taking my dog / pet</input>
+							<br />
+						</div>
+					</div>
 					<div class="row">
 						<div class="twelve columns submit">
-							<button type="submit">Sign up!</button>
+							<button type="submit">Go!</button>
 						</div>
 					</div>
 				</form>
+
 			</div>
 		</section>
 

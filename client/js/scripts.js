@@ -12,18 +12,35 @@ $(document).ready(function() {
 
 	$('#signup-form').on('submit', function(e) {
 		e.preventDefault();
-
+		var name = $('#name-input').val();
 		var eaddress = $('#email-input').val();
 		var location = $('#location-input').val();
-		var confirmationString = '<p>Hello!  Thanks for signing up for the Hiking Helper waiting list.  We will email you when we launch!</p>';
-		var signupString = '<p>Email address: ' + eaddress + '</p><p>Location: ' + location + '</p>';
+		var distance = $('#distance-input').val();
+		var time = $('#time-input').val();
+		var length = $('#length-input').val();
+		var checkedInputs = [];
+		$('input:checked').each(function() {
+    		checkedInputs.push($(this).attr('value'));
+		});
+		var checked = checkedInputs.join(", ");
+		
+		var confirmationString = '<p>Hello!  Thanks for signing up for Hiking Helper! Your helper will email you shortly to begin planning a personalized adventure for you.</p>';
+		var signupArray = [
+			'<p>Name: ' + name + '</p>',
+			'<p>Email: ' + eaddress + '</p>',
+			'<p>location: ' + location + '</p>',
+			'<p>distance: ' + distance + '</p>',
+			'<p>time: ' + time + '</p>',
+			'<p>length: ' + length + '</p>',
+			'<p>reasons: ' + checked + '</p>',
+		];
+		var signupString = signupArray.join("");
+		
 		if (!validEmail(eaddress)) {
 			$('#email-input').css({ "border": '#FF0000 1px solid'});
 			return;
 		} else {
 			$('#email-input').css({ "border": 'none'});
-
-			//confirmation
 			$.ajax({
 				type: 'POST',
 				url: 'https://mandrillapp.com/api/1.0/messages/send.json',
@@ -62,7 +79,7 @@ $(document).ready(function() {
 							}
 						],
 						'autotext': 'true',
-						'subject': 'New Hiker Waiting List Signup!',
+						'subject': 'New Hiker to Help!',
 						'html': signupString
 					}
 				}
