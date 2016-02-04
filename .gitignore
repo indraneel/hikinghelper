@@ -1,1 +1,5 @@
 .DS_Store
+server/twilio.txt
+server/logs/
+server/venv/
+server/twilio-python-latest/
